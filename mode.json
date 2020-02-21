@@ -1,29 +1,16 @@
 {
     "Bots": {
-        "u1199f4457ca444e07accf97cb8dc915d": true,
-        "u511296df7d51c20530f9160c8434f7e4": true,
-        "u6906c58681007b0be60c87cdae143be5": true,
-        "u7344de5e2280a4fa1d3f7fa78eacbace": true,
-        "ubd0b3b1d0d7f24a35453527e9360a6de": true,
-        "uc490131dc56b3ea00f84e0c6fb7cf590": true,
-        "uc5df7b35d34ec13b02cc7e06c7ba22d3": true,
-        "uc723178071000fdb8d6c40db7f0d29e2": true
+        "": true
     },
     "addBlacklist": false,
     "admin": {
-        "u1199f4457ca444e07accf97cb8dc915d": true,
-        "u511296df7d51c20530f9160c8434f7e4": true,
-        "u6906c58681007b0be60c87cdae143be5": true,
-        "u7344de5e2280a4fa1d3f7fa78eacbace": true,
-        "ubd0b3b1d0d7f24a35453527e9360a6de": true,
-        "uc490131dc56b3ea00f84e0c6fb7cf590": true,
-        "uc5df7b35d34ec13b02cc7e06c7ba22d3": true
+        "": true
     },
     "autoJoin": true,
     "autoJoinTicket": true,
     "backup": true,
     "blacklist": {
-        "u6d133855d1edae352b3cd801322bd286": true
+        "": true
     },
     "changeCover": false,
     "changePicture": false,

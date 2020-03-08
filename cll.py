@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from InexBots import *
+from xBots import *
 from multiprocessing import Pool, Process
 from subprocess import check_output
 from datetime import datetime

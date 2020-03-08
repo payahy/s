@@ -1,22 +1,12 @@
 {
-    "Bots": {
-        "": true
-    },
-    "addBlacklist": false,
-    "admin": {
-        "": true
-    },
+    "Bots": {},
+    "admin": {},
+    "owner": {},
     "autoJoin": true,
     "autoJoinTicket": true,
     "backup": true,
-    "blacklist": {
-        "": true
-    },
-    "changeCover": false,
-    "changePicture": false,
-    "changeProfileCover": {},
-    "delBlacklist": false,
+    "blacklist": {},
     "keyCommand": "",
-    "rePoint": "c182a4662a298d9562bd3e72f5c273f61",
+    "rePoint": "",
     "setKey": false
 }

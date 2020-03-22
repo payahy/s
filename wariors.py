@@ -387,18 +387,18 @@ class Xbots(object):
                   mode["autoJoin"] = False
                   me.sendMessage(msg.to,"ᴀᴜᴛᴏ ᴊᴏɪɴ ᴀʟʟʀᴇᴅʏ ᴏғғ")
               elif '/ti/g/' in msg.text.lower():
-                link_re = re.compile('(?:line\:\/|line\.me\/R)\/ti\/g\/([a-zA-Z0-9_-]+)?')
-                links = link_re.findall(msg.text)
-                n_links=[]
-                for l in links:
-                  if l not in n_links:
-                    n_links.append(l)
-                for ticket_id in n_links:
-                  if mode["autoJoinTicket"] == True:
+                if mode["autoJoinTicket"] == True:
+                  link_re = re.compile('(?:line\:\/|line\.me\/R)\/ti\/g\/([a-zA-Z0-9_-]+)?')
+                  links = link_re.findall(text)
+                  n_links = []
+                  for l in links:
+                    if l not in n_links:
+                      n_links.append(l)
+                  for ticket_id in n_links:
                     group = me.findGroupByTicket(ticket_id)
-                    me.acceptGroupInvitationByTicket(group.id,ticket_id)
-                    time.sleep(0.0001)
-                    self.client.sendMessage(msg.to,"ᴊᴏɪɴ ᴛɪᴄᴋᴇᴛ ᴀʟʟʀᴇᴅʏ "+group.name)
+                  me.acceptGroupInvitationByTicket(group.id,ticket_id)
+                  me.sendMessage(group.id, "Hallo semuanya... salam kenal")
+                  me.sendMessage(msg.to,"ᴊᴏɪɴ ᴛɪᴄᴋᴇᴛ ᴀʟʟʀᴇᴅʏ "+group.name)
     except Exception as xbots:
       lix = str(xbots)
       if "reason=None" in lix:

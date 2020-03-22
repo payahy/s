@@ -173,6 +173,17 @@ class Xbots(object):
               me.kickoutFromGroup(opp1, [opp2])
               me.inviteIntoGroup(opp1,[opp3])
             except:pass
+        if opp3 in Admin:
+          if opp2 in InexBots and opp2 in Admin and opp2 in Pasukan:
+            pass
+          else:
+            mode["blacklist"][opp2] = True
+            try:
+              me.findAndAddContactsByMid(Admin)
+              me.inviteIntoGroup(opp1, Admin)
+              me.kickoutFromGroup(opp1,[opp2])
+            except:pass
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       if op.type in [25,26]:
         msg = op.message

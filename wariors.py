@@ -267,7 +267,7 @@ class Xbots(object):
               elif Pbot == "add":
                 if sender in InexBots or sender in Admin:
                   for Allbots in me:
-                    for Creator in InexBits:
+                    for Creator in InexBots:
                       try:
                         Allbots.findAndAddContactsByMid(Creator)
                       except:pass

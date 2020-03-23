@@ -332,7 +332,7 @@ class Xbots(object):
                   me.leaveGroup(msg.to)
               elif Pbot.startswith("jembut "):
                 if sender in InexBots or sender in Admin:
-                  nk0 = cmd.replace("jembut ","")
+                  nk0 = text.replace("jembut ","")
                   nk1 = nk0.lstrip()
                   nk2 = nk1.replace("@","")
                   nk3 = nk2.rstrip()

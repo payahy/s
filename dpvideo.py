@@ -24,24 +24,61 @@ _session = requests.session()
 botStart = time.time()
 #WARNA
 merah = "#FF2800"
-nila = "#4B0082"
 kuning = "#FFFD00"
 hijau = "#83FF00"
+hijauMuda = "#00FF00"
+unguTua = "#9900FF"
+merahHati = "#660000"
 biru = "#00DAFF"
 biruTua = "#0000FF"
 ungu = "#C323FF"
+nila = "#4B0082"
+pingTua = "#FF17CE"
 ping = "#FF17CE"
 hitam = "#000000"
 putih = "#FFFFFF"
+jambon = "#FF0066"
+biruHitam = "#330033"
 abuabu = "#000000cc"
+sp_putih = {"type": "separator","color": putih}
 sp_nila = {"type": "separator","color": nila}
-sp_putih = {"type": "separator","color": "#FFFFFF"}
+sp_hitam = {"type": "separator","color": hitam}
+sp_kuning = {"type": "separator","color": kuning}
+sp_biru = {"type": "separator","color": biruTua}
+sp_hijau = {"type": "separator","color": hijau}
+sp_merah = {"type": "separator","color": merahHati}
+sp_ungu = {"type": "separator","color": unguTua}
+sp_ping = {"type": "separator","color": pingTua}
+sp_abuabu = {"type": "separator","color": abuabu}
+style_hijau={"header":{"backgroundColor":abuabu},"body":{"backgroundColor":abuabu},"footer":{"backgroundColor":abuabu,"separator":True,"separatorColor":hijau}}
+style_nila={"header":{"backgroundColor":nila},"body":{"backgroundColor":nila},"footer":{"backgroundColor":nila,"separator":True,"separatorColor":biruTua}}
+style_edit={"header":{"backgroundColor":abuabu},"body": {"cornerRadius": "md","borderWidth": "5px","borderColor": unguTua},"footer":{"backgroundColor":abuabu,"separator":True,"separatorColor":hijau}}
+style_merah={"header":{"backgroundColor":abuabu},"body":{"backgroundColor":abuabu},"footer":{"backgroundColor":abuabu,"separator":True,"separatorColor":merah}}
 style_biru={"header":{"backgroundColor":abuabu},"body":{"backgroundColor":abuabu},"footer":{"backgroundColor":abuabu,"separator":True,"separatorColor":biru}}
+style_kuning={"header":{"backgroundColor":abuabu},"body":{"backgroundColor":abuabu},"footer":{"backgroundColor":abuabu,"separator":True,"separatorColor":kuning}}
+style_ungu={"header":{"backgroundColor":abuabu},"body":{"backgroundColor":abuabu},"footer":{"backgroundColor":abuabu,"separator":True,"separatorColor":ungu}}
+style_putih={"header":{"backgroundColor":putih},"body":{"backgroundColor":putih},"footer":{"backgroundColor":putih,"separator":True,"separatorColor":hitam}}
+style_hitam={"header":{"backgroundColor":hitam},"body":{"backgroundColor":hitam},"footer":{"backgroundColor":hitam,"separator":True,"separatorColor":putih}}
+Pabuabu = "https://bakarenders.com/renders/albums/userpics/11535/normal_hatsunemiku_-_loveiswar2.png"
+Warna1 = (merah,hijau,biru,hijauMuda)
+Warna2 = (biruTua,merahHati,unguTua,nila)
+Warna3 = (putih,kuning,pingTua)
+warnanya1 = random.choice(Warna1)
+warnanya2 = random.choice(Warna2)
+warnanya3 = random.choice(Warna3)
+pict1 = "https://os.line.naver.jp/os/p/{}"
+pict2 = "https://obs.line-scdn.net/{}"
+#poto
+logo = "https://1.bp.blogspot.com/-6T7oMDOIlKA/XVX_8-oO52I/AAAAAAAAGe0/W0MubSIIyUUzw3et2YifTWqxaNRRwWE-ACLcBGAs/s1600/20190816_075636.png"
 image1 = "https://1.bp.blogspot.com/-zyUmsriCmGE/XVYAO-lsFLI/AAAAAAAAGe8/BsSUwtUfFc0mxRGxE_8fOz3peuxB3t9UwCLcBGAs/s1600/20190816_074821.jpg"
 image2 = "https://1.bp.blogspot.com/-zK32-fvqcNw/XVYAUCQhrmI/AAAAAAAAGfA/hXKs0MS2OIMKi09tJ7yCjnjUbMiuV_TIACLcBGAs/s1600/20190816_074438.jpg"
 image3 = "https://1.bp.blogspot.com/-OgPmr5eJpYg/XVYAVFAYcaI/AAAAAAAAGfE/Xwh0EqB_SrclP-NZ_DaDqxcYnWBZSa_FgCLcBGAs/s1600/20190816_074311.jpg"
-Pabuabu = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROA9420U3BHcyOg97LAZh_cdGZreFn4rJpfDQV8a7WiGYkQpMW"
+a1 = "https://1.bp.blogspot.com/-pBMROlmPtdg/XXJF_q2cQCI/AAAAAAAAG1E/7TRgM49vMZAXvAEhtVbO--zPCqvdh8SBACLcBGAs/s1600/20190906_183218.jpg"
+a2 = "https://1.bp.blogspot.com/-rTWcjzSC8uk/XXJF5YVuADI/AAAAAAAAG1A/noFsixwxTHoE9DDSoSbQHLs-OXnY5udCACLcBGAs/s1600/20190906_183534.jpg"
 Gambar = (image1,image2,image3)
+a3 = (a1,a2)
+Hasile = random.choice(Gambar)
+Aa1 = random.choice(a3)
 logo = "https://1.bp.blogspot.com/-6T7oMDOIlKA/XVX_8-oO52I/AAAAAAAAGe0/W0MubSIIyUUzw3et2YifTWqxaNRRwWE-ACLcBGAs/s1600/20190816_075636.png"
 Warna = (merah,kuning,hijau,biru,ping,ungu)
 warnanya1 = random.choice(Warna)
@@ -61,6 +98,7 @@ print("""
 ▄█▄ ░░░█░ ▀ █▄▄█ ▀▄▄▀ ▀ █▄▄ █▄▄█ ▄█▄ ░▄▄▀ """)
 Hallow = """
 Bot @
+Addblc @
 Join
 Banlist
 Clearban
@@ -103,7 +141,7 @@ set = {
   "contact": False,
   "autoJoinMessage": "ᴛᴇʀɪᴍᴀᴋᴀsɪʜ ᴋᴀᴋᴀ ᴀᴛᴀs ᴜɴᴅᴀɴɢᴀɴ ɢʀᴜᴘɴʏᴀ.",
   "comment": "ᴀᴜᴛᴏ ʟɪᴋᴇ ɴ ᴄᴏᴍᴍᴇɴᴛ ᴅᴏɴᴇ\nвʏ.ᴛᴇᴀᴍ ⊶ [B.O.G] ⊷",
-  "comment2": "┏━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━┓\n┃┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓\n┃┃     ❀    [ BLACK_OF_GAMER ]    ❀\n┃┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛\n├━━━━━━━━━━━━━━━━━━━━━━━━\n┃┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓\n┃┃          LIKE N COMMENT DONE\n┃┃         IKUTAN CORET-CORET\n┃┃                     B.O.G_TEAM\n┃┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛\n├━━━━━━━━━━━━━━━━━━━━━━━━\n┃┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓\n┃┃  AciL :\n┃┃  http://line.me/ti/p/~adiputra.95\n┃┃  Denjaka :\n┃┃  http://line.me/ti/p/~denjaka_inex\n┃┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛\n┗━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━┛",
+  "comment2": "┏━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━┓\n┃┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓\n┃┃     ❀    [ BLACK_OF_GAMER ]    ❀\n┃┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛\n├━━━━━━━━━━━━━━━━━━━━━━━━\n┃┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓\n┃┃          LIKE N COMMENT DONE\n┃┃         IKUTAN CORET-CORET\n┃┃                     B.O.G_TEAM\n┃┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛\n├━━━━━━━━━━━━━━━━━━━━━━━━\n┃┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓\n┃┃  AciL :\n┃┃  http://line.me/ti/p/~adiputra.95\n┃┃  Denjaka :\n┃┃  https://bit.ly/38K8bbV\n┃┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛\n┗━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━┛",
   "mention":"ᴋᴀʟᴏ ɴɢɪɴᴛɪᴘ ᴛᴇʀᴜs ᴅᴀᴘᴇᴛ ɢᴇʟᴀs ᴘᴇᴄᴀʜ ᴅɪ ᴋᴇᴘᴀʟᴀ...",
   "Respontag":"https://youtube.com/channel/UCu5Aqj6zqJK59pXxNGw8HMg",
   "Respontag2":"ada apa tag saya d grup kak?",
@@ -262,7 +300,7 @@ def sendTemplate2 (to,text):
   ],"type":"box","spacing":"xs","layout":"vertical"}},}
   me.sendFlex(to, data)
 def Fotter(to,text):
-  data = {"type": "text","text": text,"sentBy": {"label": "вĻα¢к ● σƒ ● gαмєя","iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSi2LaC4ftZz21mtSDA3YkylLb6lgqncx_uxOp-wdyAlIqsVsJ1","linkUrl": "http://line.me/ti/p/~denjaka_inex"}}
+  data = {"type": "text","text": text,"sentBy": {"label": "вĻα¢к ● σƒ ● gαмєя","iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSi2LaC4ftZz21mtSDA3YkylLb6lgqncx_uxOp-wdyAlIqsVsJ1","linkUrl": "https://bit.ly/38K8bbV"}}
   me.sendFlex(to,data)
 def RunTheRun(to, mid, firstmessage):
   try:
@@ -443,9 +481,9 @@ def bot(op):
                             sp_putih,
                             {"type": "image","url": "https://cdn.dribbble.com/users/293796/screenshots/3438995/fb-likes.gif","size": "xl","action": {"type": "uri","uri": "line://app/1609524990-mpvZ5xv5"}},
                             sp_putih,
-                            {"url":"https://os.line.naver.jp/os/p/{}".format(Dari),"type":"image","action": {"type": "uri","uri": "https://os.line.naver.jp/os/p/{}".format(Dari)}},
+                            {"url":"https://os.line.naver.jp/os/p/{}".format(masuk.pictureStatus),"type":"image","action": {"type": "uri","uri": "https://os.line.naver.jp/os/p/{}".format(masuk.pictureStatus)}},
                             sp_putih,
-                            {"type":"image","url": "https://1.bp.blogspot.com/-zyUmsriCmGE/XVYAO-lsFLI/AAAAAAAAGe8/BsSUwtUfFc0mxRGxE_8fOz3peuxB3t9UwCLcBGAs/s1600/20190816_074821.jpg","size":"xl","action": {"type": "uri","uri": "http://line.me/ti/p/~denjaka_xtc"}},
+                            {"type":"image","url": "https://1.bp.blogspot.com/-zyUmsriCmGE/XVYAO-lsFLI/AAAAAAAAGe8/BsSUwtUfFc0mxRGxE_8fOz3peuxB3t9UwCLcBGAs/s1600/20190816_074821.jpg","size":"xl","action": {"type": "uri","uri": "https://bit.ly/38K8bbV"}},
                             sp_putih
                             ],"type":"box","spacing":"md","layout":"horizontal"},
                             sp_putih,
@@ -548,7 +586,7 @@ def bot(op):
                            sp_putih,
                            {
                            "type": "image",
-                            "url": "https://os.line.naver.jp/os/p/{}".format(h.pictureStatus),
+                            "url": "https://obs.line-scdn.net/{}".format(h.pictureStatus),
                             "size": "full",
                             "aspectRatio": "20:13"
                               },
@@ -620,7 +658,7 @@ def bot(op):
                               "contents": [
                                 {
                                   "type": "image",
-                                  "url": Pabuabu,
+                                  "url": "https://obs.line-scdn.net/{}".format(h.pictureStatus),
                                   "size": "full",
                                   "aspectMode": "cover",
                                   "aspectRatio": "4:6",
@@ -632,7 +670,7 @@ def bot(op):
                            "spacing": "md",
                             "action": {
                             "type": "uri",
-                             "uri": "https://line.me/ti/p/~denjaka_inex"
+                             "uri": "https://bit.ly/38K8bbV"
                               },
                             "contents": [
                            {"contents":[
@@ -862,7 +900,7 @@ def bot(op):
                                "sentBy": {
                                   "label": "вĻα¢к●σƒ●gαмєя",
                                   "iconUrl": "https://scontent.fcgk9-2.fna.fbcdn.net/v/t1.0-9/cp0/e15/q65/p851x315/51691304_1868204569955031_2146220437988704256_o.jpg?_nc_cat=103&efg=eyJpIjoiYiJ9&_nc_eui2=AeH2ckLWYQHsnNZ_h-dxkaE6z8BLc-ped-MztW4ZIVdUV-ntVbUtpxp-yrIWasU0oZ8NiwTRmKSqr0DSF8HXmDE7MZQ7aCk7ff-H_i1Gzo8g7w&_nc_oc=AQn9OIKwJojXlHshN7igjGYPAx0PGSK3ICR-Vyp57YXxp1cGQulKVLgPBiaFkJfI2Iw&_nc_ht=scontent.fcgk9-2.fna&oh=bf88bf2a4f06709e8f5d18310f26865c&oe=5DB50A10",
-                                  "linkUrl": "http://line.me/ti/p/~denjaka_inex"
+                                  "linkUrl": "https://bit.ly/38K8bbV"
                                  }
                              }
                             me.sendFlex(To, data)
@@ -1066,6 +1104,22 @@ def bot(op):
                           if Dari in meM:
                             set["arespon"] = False
                             sendTemplate(To,"Respon pm dinonaktifkan")
+                        if Pbot.startswith("addblc "):
+                          if Dari in meM:
+                            key = eval(msg.contentMetadata["MENTION"])
+                            key["MENTIONEES"][0]["M"]
+                            targets = []
+                            for x in key["MENTIONEES"]:
+                              targets.append(x["M"])
+                            for target in targets:
+                              if target in set["blacklist"]:
+                                Fotter(To, "Dia Sudah ada di blacklist")
+                              else:
+                                try:
+                                  set["blacklist"][target] = True
+                                  sendTemplate(To, "Berhasil tambah blacklist")
+                                except:
+                                  pass
                         if "/ti/g/" in Pbot:
                           if set["autoJoinTicket"] == True:
                             link_re = re.compile('(?:line\:\/|line\.me\/R)\/ti\/g\/([a-zA-Z0-9_-]+)?')

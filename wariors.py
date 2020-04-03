@@ -205,7 +205,7 @@ class Xbots(object):
               return
             else:
               Pbot = command(text)
-              if cmd == "menu":
+              if Pbot == "menu":
                 if sender in InexBots or sender in Admin:
                   me.sendMessage(msg.to, Helps)
               elif Pbot == "/reboot" or Pbot == "/restart":
